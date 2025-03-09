@@ -1,5 +1,4 @@
 from dotenv import load_dotenv
-
 load_dotenv()
 
 from langgraph.graph import END, StateGraph
@@ -98,4 +97,4 @@ workflow.add_edge(GENERATE, END)
 
 app = workflow.compile()
 
-app.get_graph.draw_mermaid_png(output_file_path="graph.png")
+#app.get_graph.draw_mermaid_png(output_file_path="graph.png")
